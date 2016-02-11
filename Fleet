@@ -1,0 +1,29 @@
+/**
+ * Write a description of class Fleet here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Fleet
+{
+    private Ship ship1;
+    private Ship ship2;
+    private Ship ship3;
+    private Ship ship4;
+    
+    private static int currentFuel;
+    
+    public Fleet(Ship inShip1, Ship inShip2, Ship inShip3, Ship inShip4)
+    {
+        ship1 = inShip1;
+        ship2 = inShip2;
+        ship3 = inShip3;
+        ship4 = inShip4;
+        currentFuel = 290;
+    }
+    
+    public void deploy()
+    {
+      
+    }
+}
