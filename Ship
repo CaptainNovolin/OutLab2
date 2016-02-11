@@ -1,0 +1,26 @@
+/**
+ * Allows the creation of ship objects as well as creates methods
+ * 
+ * @author Nathan Roller -02254188 
+ * @version Jan. 29, 2016
+ */
+public class Ship
+{
+    //Instance Variables
+    private String name;
+    private int maxFuel;
+    private double currentFuel;
+    
+    //Constructor for Ship class
+    public Ship(String inName, int inMaxFuel)
+    {
+        name = inName;
+        maxFuel = inMaxFuel;
+    }
+    
+    //Method
+    public void getCurrentFuel(double inCurrentFuel)
+    {
+        inCurrentFuel = currentFuel;
+    }
+}
