@@ -10,17 +10,34 @@ public class Ship
     private String name;
     private int maxFuel;
     private double currentFuel;
+    private double fuelConsumed;
     
     //Constructor for Ship class
     public Ship(String inName, int inMaxFuel)
     {
         name = inName;
         maxFuel = inMaxFuel;
+        currentFuel = maxFuel;
     }
     
-    //Method
-    public void getCurrentFuel(double inCurrentFuel)
+    public void deploy()
     {
-        inCurrentFuel = currentFuel;
+        currentFuel = currentFuel / 2;
+        fuelConsumed = fuelConsumed + currentFuel;
+    }
+    
+    public double getFuelConsumed()
+    {
+        return fuelConsumed;
+    }
+    
+    public void refuel()
+    {
+        currentFuel = maxFuel;
+    }
+    
+    public String getName()
+    {
+        return name;
     }
 }
