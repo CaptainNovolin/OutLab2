@@ -10,8 +10,7 @@ public class Fleet
     private Ship ship2;
     private Ship ship3;
     private Ship ship4;
-    
-    private static int currentFuel;
+    private int currentFuel;
     
     public Fleet(Ship inShip1, Ship inShip2, Ship inShip3, Ship inShip4)
     {
@@ -19,11 +18,33 @@ public class Fleet
         ship2 = inShip2;
         ship3 = inShip3;
         ship4 = inShip4;
-        currentFuel = 290;
     }
     
     public void deploy()
     {
-      
+        ship1.deploy();
+        ship2.deploy();
+        ship3.deploy();
+        ship4.deploy();
+    }
+    
+    public void reFuel()
+    {
+        ship1.refuel();
+        ship2.refuel();
+        ship3.refuel();
+        ship4.refuel();
+    }
+    
+    public void printSummary()
+    {
+        System.out.println(ship1.getName() + " has consumed " + ship1.getFuelConsumed()
+        + " units of fuel.");
+        System.out.println(ship2.getName() + " has consumed " + ship2.getFuelConsumed()
+        + " units of fuel.");
+        System.out.println(ship3.getName() + " has consumed " + ship3.getFuelConsumed()
+        + " units of fuel.");
+        System.out.println(ship4.getName() + " has consumed " + ship4.getFuelConsumed()
+        + " units of fuel.");
     }
 }
